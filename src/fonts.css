@@ -1,0 +1,14 @@
+
+@font-face {
+  font-family: 'Bebas';
+  src: url('./assets/fonts/BebasNeue-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karantina';
+  src: url('./assets/fonts/Karantina-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}

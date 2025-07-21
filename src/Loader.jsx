@@ -1,73 +1,73 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
-const TextFill = () => {
-  const fillRef = useRef(null);
+const Loader = () => {
+  const waveRef = useRef(null);
 
   useEffect(() => {
     gsap.fromTo(
-      fillRef.current,
-      { y: '100%' },
-      {
-        y: '0%',
-        duration: 10,
-        ease: 'power2.out',
-      }
+      waveRef.current,
+      { y: 150 },
+      { y: 0, duration: 2.5, ease: 'power2.inOut' }
     );
   }, []);
 
   return (
     <div className="h-screen flex items-center justify-center bg-[#56021F]">
       <svg
-        viewBox="0 0 1000 300"
-        className="w-full max-w-5xl"
-        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 800 200"
+        width="800"
+        height="200"
+        style={{ display: 'block' }}
       >
-        {/* Define white fill in a mask */}
         <defs>
           <clipPath id="text-clip">
             <text
               x="50%"
-              y="60%"
+              y="55%"
               textAnchor="middle"
-              className="font-[Bebas Neue]"
-              fontSize="180"
-              fontWeight="700"
+              fontSize="100"
+              fontWeight="bold"
+              fontFamily="'Bebas Neue', sans-serif"
+              dominantBaseline="middle"
             >
-              HARIPRIYA
+              जय श्री कृष्णा
             </text>
           </clipPath>
         </defs>
-
-        {/* Background Text (outline or empty) */}
+        {/* Faint background text */}
         <text
           x="50%"
-          y="60%"
+          y="55%"
           textAnchor="middle"
-          fontSize="180"
-          fontWeight="700"
+          fontSize="100"
+          fontWeight="bold"
+          fontFamily="'Bebas Neue', sans-serif"
           fill="white"
           opacity="0.1"
-          className="font-[Bebas Neue]"
+          dominantBaseline="middle"
         >
-          HARIPRIYA
+          जय श्री कृष्णा
         </text>
-
-        {/* White fill inside text via clipPath */}
+        {/* Animated wave fill */}
         <g clipPath="url(#text-clip)">
-          <rect
-            ref={fillRef}
-            x="0"
-            y="0"
-            width="1000"
-            height="300"
-            fill="white"
-            transform="translate(500, 900)"
-          />
+          <g ref={waveRef}>
+            <path
+              d="
+                M0,200
+                Q200,150 400,200
+                T800,200
+                V0
+                H0
+                Z
+              "
+              fill="white"
+            />
+          </g>
         </g>
       </svg>
     </div>
   );
 };
 
-export default TextFill;
+export default Loader;

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Gyatri Mam",
+    "phone": "",
+    "product": "Milk"
+  },
+  {
+    "id": 2,
+    "name": "Vijay Medical",
+    "phone": "",
+    "product": "Milk"
+  },
+  {
+    "id": 3,
+    "name": "FK Fashion",
+    "phone": "7976109792",
+    "product": "Milk"
+  },
+  {
+    "id": 4,
+    "name": "Keshan Ji Madaria",
+    "phone": "9667487064",
+    "product": "Milk"
+  },
+  {
+    "id": 5,
+    "name": "Tarun Vaishnav",
+    "phone": "",
+    "product": "Milk"
+  },
+  {
+    "id": 6,
+    "name": "Prakash Ji Tailor",
+    "phone": "",
+    "product": "Milk"
+  },
+  {
+    "id": 7,
+    "name": "Musktak Ji",
+    "phone": "",
+    "product": "Milk"
+  }
+]

@@ -38,12 +38,12 @@ function MorningChecklist() {
     const completed = list.filter(item => item.completed);
     const remaining = list.filter(item => !item.completed);
 
-    let content = `🗓️ Morning Delivery Checklist\n\n✅ Completed Tasks:\n`;
+    let content = `Morning Delivery Checklist\n\nDelivered:\n`;
     completed.forEach((item, index) => {
       content += `${index + 1}. ${item.quantity} ${item.name}\n`;
     });
 
-    content += `\n❌ Remaining Tasks:\n`;
+    content += `\nRemaining:\n`;
     remaining.forEach((item, index) => {
       content += `${index + 1}. ${item.quantity} ${item.name}\n`;
     });
@@ -56,20 +56,50 @@ function MorningChecklist() {
     item.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  const calculateQuantities = () => {
+    let oneLitre = 0;
+    let halfLitre = 0;
+
+    list.forEach(item => {
+      const qty = item.quantity.replace(/\s+/g, '').replace(/[️⃣]/g, '');
+
+      if (qty === "1") oneLitre += 1;
+      else if (qty === "1/2") halfLitre += 1;
+      else if (qty === "1+1/2" || qty === "1+½") {
+        oneLitre += 1;
+        halfLitre += 1;
+      } else if (qty === "2") oneLitre += 2;
+      else if (qty === "1-1/2" || qty === "1-½") {
+        oneLitre += 1;
+        halfLitre += 1;
+      }
+    });
+
+    return { oneLitre, halfLitre };
+  };
+
+  const { oneLitre, halfLitre } = calculateQuantities();
+
   return (
-    <div className="max-w-2xl mx-auto p-6 mt-10 bg-white rounded-xl shadow-md">
-      <div className="flex justify-between items-center mb-4">
-        <h1 className="text-xl font-bold">🗓️ Morning Delivery Checklist</h1>
-        <div className="flex gap-2">
+    <div className="w-full max-w-screen-sm lg:max-w-screen-md mx-auto p-4 mt-6 bg-white rounded-xl shadow-lg">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mb-4">
+        <div>
+          <h1 className="text-xl font-bold">🗓️ Morning Delivery Checklist</h1>
+          <p className="text-sm text-gray-600 mt-1">
+            🧮 Count → 1 Litre: <strong>{oneLitre}</strong> | 1/2 Litre: <strong>{halfLitre}</strong>
+          </p>
+        </div>
+
+        <div className="flex gap-2 flex-wrap">
           <button
             onClick={resetChecklist}
-            className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
+            className="bg-red-500 text-white px-4 py-1 rounded hover:bg-red-600"
           >
             Reset
           </button>
           <button
             onClick={downloadChecklist}
-            className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600"
+            className="bg-blue-500 text-white px-4 py-1 rounded hover:bg-blue-600"
           >
             Download
           </button>
@@ -86,7 +116,7 @@ function MorningChecklist() {
       />
 
       {/* Checklist */}
-      <ul className="space-y-2 max-h-[50vh] overflow-y-auto pr-2 mb-6">
+      <ul className="space-y-2 max-h-[50vh] overflow-y-auto pr-1 mb-6">
         {filteredList.map((item) => (
           <li key={item.id} className="flex items-center cursor-pointer">
             <input

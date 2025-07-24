@@ -2,13 +2,15 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import MorningChecklist from './Pages/Morning_Dilevery';
 import EveningChecklist from './Pages/Evening_Dilevery';
+import ConsumerTable from './Pages/Consumer';
+
 
 const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <main className='border-2 border-black h-screen'>
-      <div className='border-2 border-black justify-self-center w-96 p-5 items-center flex flex-col gap-5'>
+    <main className="h-screen flex items-center justify-center border-2 border-black">
+      <div className='border-2 border-black justify-self-center w-96 p-5 items-center flex flex-col gap-5 rounded-3xl'>
         <button
           className='border-2 border-black w-72 h-16 rounded-full'
           onClick={() => navigate('/morning')}
@@ -33,12 +35,6 @@ const Home = () => {
         >
           Bill Creation
         </button>
-        <button
-          className='border-2 border-black w-72 h-16 rounded-full'
-          onClick={() => navigate('/history')}
-        >
-          Bills History
-        </button>
       </div>
     </main>
   );
@@ -52,9 +48,8 @@ const App = () => {
         <Route path="/morning" element={<MorningChecklist />} />
         <Route path="/evening" element={<EveningChecklist />} />
         {/* You can create placeholder components for the rest if needed */}
-        <Route path="/consumer" element={<div className="p-6">Consumer List Page</div>} />
+        <Route path="/consumer" element={<ConsumerTable/>} />
         <Route path="/bill" element={<div className="p-6">Bill Creation Page</div>} />
-        <Route path="/history" element={<div className="p-6">Bills History Page</div>} />
       </Routes>
     </Router>
   );

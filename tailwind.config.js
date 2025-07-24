@@ -4,11 +4,7 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: { 
-      fontFamily: {
-        bebas : ['Bebas', 'sans'],
-        karantina : ['Karantina', 'sans']
-      },},
+    extend: { },
   },
   plugins: [],
 }

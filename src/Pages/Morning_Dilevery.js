@@ -8,25 +8,40 @@ function MorningChecklist() {
   const [newName, setNewName] = useState("");
   const [newQuantity, setNewQuantity] = useState("1");
 
+  // ✅ Toggle delivery checkbox
   const toggleCheck = (id) => {
     setList(list.map(item =>
       item.id === id ? { ...item, completed: !item.completed } : item
     ));
   };
 
-  const resetChecklist = () => {
-    setList(list.map(item => ({ ...item, completed: false })));
+  // ✅ Toggle bottle return checkbox
+  const toggleBottleReturn = (id) => {
+    setList(list.map(item =>
+      item.id === id ? { ...item, bottleReturned: !item.bottleReturned } : item
+    ));
   };
 
+  // ✅ Reset all checkboxes
+  const resetChecklist = () => {
+    setList(list.map(item => ({
+      ...item,
+      completed: false,
+      bottleReturned: false
+    })));
+  };
+
+  // ✅ Add new entry
   const handleAddEntry = (e) => {
     e.preventDefault();
     if (newName.trim() === "") return;
 
     const newItem = {
-      id: list.length + 1,
+      id: Date.now(),
       name: newName,
       quantity: newQuantity,
-      completed: false
+      completed: false,
+      bottleReturned: false
     };
 
     setList([...list, newItem]);
@@ -34,28 +49,44 @@ function MorningChecklist() {
     setNewQuantity("1");
   };
 
-  const downloadChecklist = () => {
-    const completed = list.filter(item => item.completed);
-    const remaining = list.filter(item => !item.completed);
+  // ✅ Download checklist
+const downloadChecklist = () => {
+  const completed = list.filter(item => item.completed);
+  const remaining = list.filter(item => !item.completed);
 
-    let content = `Morning Delivery Checklist\n\nDelivered:\n`;
-    completed.forEach((item, index) => {
-      content += `${index + 1}. ${item.quantity} ${item.name}\n`;
-    });
+  let content = `🌅 Morning Delivery Checklist\n\n✅ Delivered (${completed.length}):\n`;
+  completed.forEach((item, index) => {
+    content += `  ${index + 1}. ${item.name} - ${item.quantity} ${
+      item.bottleReturned ? "(bottle returned)" : "(bottle not returned)"
+    }\n`;
+  });
 
-    content += `\nRemaining:\n`;
-    remaining.forEach((item, index) => {
-      content += `${index + 1}. ${item.quantity} ${item.name}\n`;
-    });
+  content += `\n⏳ Remaining (${remaining.length}):\n`;
+  remaining.forEach((item, index) => {
+    content += `  ${index + 1}. ${item.name} - ${item.quantity} ${
+      item.bottleReturned ? "(bottle returned)" : "(bottle not returned)"
+    }\n`;
+  });
 
-    const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
-    saveAs(blob, "morning-checklist.txt");
-  };
+  // ✅ Get current date
+  const now = new Date();
+  const formattedDate = `${String(now.getDate()).padStart(2, '0')}-${String(
+    now.getMonth() + 1
+  ).padStart(2, '0')}-${now.getFullYear()}`;
 
+  const filename = `${formattedDate} Morning Delivery.txt`;
+
+  const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+  saveAs(blob, filename);
+};
+
+
+  // ✅ Filter by name
   const filteredList = list.filter(item =>
     item.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  // ✅ Count quantities
   const calculateQuantities = () => {
     let oneLitre = 0;
     let halfLitre = 0;
@@ -82,6 +113,7 @@ function MorningChecklist() {
 
   return (
     <div className="w-full max-w-screen-sm lg:max-w-screen-md mx-auto p-4 mt-6 bg-white rounded-xl shadow-lg">
+      {/* Header */}
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mb-4">
         <div>
           <h1 className="text-xl font-bold">🗓️ Morning Delivery Checklist</h1>
@@ -89,7 +121,6 @@ function MorningChecklist() {
             🧮 Count → 1 Litre: <strong>{oneLitre}</strong> | 1/2 Litre: <strong>{halfLitre}</strong>
           </p>
         </div>
-
         <div className="flex gap-2 flex-wrap">
           <button
             onClick={resetChecklist}
@@ -106,7 +137,7 @@ function MorningChecklist() {
         </div>
       </div>
 
-      {/* Search Box */}
+      {/* Search */}
       <input
         type="text"
         placeholder="🔍 Search by name..."
@@ -118,20 +149,43 @@ function MorningChecklist() {
       {/* Checklist */}
       <ul className="space-y-2 max-h-[50vh] overflow-y-auto pr-1 mb-6">
         {filteredList.map((item) => (
-          <li key={item.id} className="flex items-center cursor-pointer">
-            <input
-              type="checkbox"
-              id={`check-${item.id}`}
-              checked={item.completed}
-              onChange={() => toggleCheck(item.id)}
-              className="mr-3 cursor-pointer"
-            />
-            <label
-              htmlFor={`check-${item.id}`}
-              className={`flex-1 select-none cursor-pointer ${item.completed ? 'line-through text-gray-500' : ''}`}
-            >
-              {item.quantity} {item.name}
-            </label>
+          <li
+            key={item.id}
+            className="flex flex-col sm:flex-row sm:items-center justify-between bg-gray-50 px-3 py-2 rounded-md"
+          >
+            {/* Name and Quantity */}
+            <div className="flex-1 text-sm sm:text-base mb-1 sm:mb-0">
+              <span className={`font-medium ${item.completed ? 'line-through text-gray-500' : ''}`}>
+                {item.name}
+              </span>{" "}
+              -{" "}
+              <span className="text-blue-600 font-semibold">{item.quantity}</span>
+            </div>
+
+            {/* Checkboxes */}
+            <div className="flex gap-4 items-center">
+              {/* Delivery */}
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={item.completed}
+                  onChange={() => toggleCheck(item.id)}
+                  className="form-checkbox h-4 w-4 text-green-600"
+                />
+                <span className="text-sm">Delivered</span>
+              </label>
+
+              {/* Bottle */}
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={item.bottleReturned}
+                  onChange={() => toggleBottleReturn(item.id)}
+                  className="form-checkbox h-4 w-4 text-yellow-500"
+                />
+                <span className="text-sm">Bottle</span>
+              </label>
+            </div>
           </li>
         ))}
         {filteredList.length === 0 && (
@@ -139,7 +193,7 @@ function MorningChecklist() {
         )}
       </ul>
 
-      {/* Add New Entry Form */}
+      {/* Add Entry Form */}
       <form onSubmit={handleAddEntry} className="space-y-4">
         <div className="flex flex-col sm:flex-row sm:space-x-4">
           <input
@@ -150,7 +204,6 @@ function MorningChecklist() {
             className="flex-1 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
             required
           />
-
           <select
             value={newQuantity}
             onChange={(e) => setNewQuantity(e.target.value)}

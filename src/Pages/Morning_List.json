@@ -1,27 +1,191 @@
 [
-  { "id": 1, "name": "Ajay Sen", "quantity": "1️", "completed": false },
-  { "id": 2, "name": "Pooja Ji Salvi Complex", "quantity": "1️", "completed": false },
-  { "id": 3, "name": "Vishnu Regar", "quantity": "1️", "completed": false },
-  { "id": 4, "name": "Kuldeep Singh DJ", "quantity": "1", "completed": false },
-  { "id": 5, "name": "Devi Singh Ji Kuldeep", "quantity": "1️", "completed": false },
-  { "id": 6, "name": "Kailash Singh Ji", "quantity": "1️", "completed": false },
-  { "id": 7, "name": "Raghuveer Singh Ji (Papsa)", "quantity": "2️", "completed": false },
-  { "id": 8, "name": "Sohan Ji Saragara", "quantity": "1️", "completed": false },
-  { "id": 9, "name": "Akash Bhaiya HDFC", "quantity": "1️", "completed": false },
-  { "id": 10, "name": "Sunny Jain", "quantity": "1️", "completed": false },
-  { "id": 11, "name": "Vijay Ji Vaishnav", "quantity": "1️", "completed": false },
-  { "id": 24, "name": "Pinkesh", "quantity": "1️", "completed": false },
-  { "id": 12, "name": "Pawan Ji Puri", "quantity": "1️", "completed": false },
-  { "id": 13, "name": "Bunty Singh", "quantity": "1️", "completed": false },
-  { "id": 14, "name": "Abhilekh Bhaiya", "quantity": "1️", "completed": false },
-  { "id": 15, "name": "Vinit Ji Ved", "quantity": "1️", "completed": false },
-  { "id": 16, "name": "Nuur Ji", "quantity": "1️", "completed": false },
-  { "id": 17, "name": "C P Sir Trivedi", "quantity": "1️", "completed": false },
-  { "id": 19, "name": "Lokesh Ji Colony", "quantity": "1️/2️", "completed": false },
-  { "id": 20, "name": "Harsh Sen", "quantity": "1️/2️", "completed": false },
-  { "id": 21, "name": "Mahesh Soni", "quantity": "1️/2️", "completed": false },
-  { "id": 22, "name": "Meer Hussain", "quantity": "1️/2️", "completed": false },
-  { "id": 23, "name": "Lekhraj Bhaiya", "quantity": "1️/2️", "completed": false },
-  { "id": 26, "name": "Om Ji Sen", "quantity": "1️/2️", "completed": false },
-  { "id": 27, "name": "Pooja Tailor", "quantity": "1️/2️", "completed": false }
+  {
+    "id": 1,
+    "name":"Pooja Ji Salvi (Complex)" ,
+    "quantity": "1",
+    "delivered": false,
+    "bottle_received": false 
+  },
+   {
+    "id": 2,
+    "name":"Vishnu Reger Ji" ,
+    "quantity": "1",
+    "delivered": false,
+    "bottle_received": false 
+  },
+   {
+    "id": 3,
+    "name":"Kuldeep Singh DJ" ,
+    "quantity": "1",
+    "delivered": false,
+    "bottle_received": false
+  },
+   {
+    "id": 4,
+    "name":"Devi Singh Ji Kuldeep" ,
+    "quantity": "1",
+    "delivered": false,
+    "bottle_received": false
+  },
+   {
+    "id": 5,
+    "name":"Kailash Singh Ji" ,
+    "quantity": "1",
+    "delivered": false,
+    "bottle_received": false 
+  },
+   {
+    "id": 6,
+    "name":"Raguveer Singh Ji (Papsa)" ,
+    "quantity": "2",
+    "delivered": false,
+    "bottle_received": false
+  },
+   {
+    "id": 7,
+    "name":"Sohan Ji Saragara" ,
+    "quantity": "1",
+    "delivered": false,
+    "bottle_received": false
+  },
+   {
+    "id": 8,
+    "name":"Akash Bhaiya HDFC" ,
+    "quantity": "1",
+    "delivered": false,
+    "bottle_received": false
+  },
+   {
+    "id": 9,
+    "name":"Vijay Ji Vaishnav" ,
+    "quantity": "1",
+    "delivered": false,
+    "bottle_received": false
+  },
+   {
+    "id": 10,
+    "name":"Pawan Ji Puri" ,
+    "quantity": "1",
+    "delivered": false,
+    "bottle_received": false
+  },
+   {
+    "id": 11,
+    "name":"Bunty Singh Ji" ,
+    "quantity": "1",
+    "delivered": false,
+    "bottle_received": false
+  },
+   {
+    "id": 12 ,
+    "name":"Ajay Sen Ji" ,
+    "quantity": "1",
+    "delivered": false,
+    "bottle_received": false
+  },
+   {
+    "id": 13 ,
+    "name":"Abhilekh Bhaiya (Kaku)" ,
+    "quantity": "1",
+    "delivered": false,
+    "bottle_received": false
+  },
+   {
+    "id": 14 ,
+    "name":"Vinit Ji Ved" ,
+    "quantity": "1",
+    "delivered": false,
+    "bottle_received": false
+  },
+   {
+    "id":15 ,
+    "name":"Om Ji LIC" ,
+    "quantity": "1",
+    "delivered": false,
+    "bottle_received": false
+  },
+   {
+    "id": 16,
+    "name":"Luv Kumar Ji (Colony)" ,
+    "quantity": "2",
+    "delivered": false,
+    "bottle_received": false
+  },
+   {
+    "id": 17,
+    "name":"Sunny Jain" ,
+    "quantity": "1",
+    "delivered": false,
+    "bottle_received": false
+  },
+   {
+    "id":18 ,
+    "name":"Pinkesh Bhati" ,
+    "quantity": "1",
+    "delivered": false,
+    "bottle_received": false
+  },
+   {
+    "id":19 ,
+    "name":"Raju Ji Agarwal" ,
+    "quantity": "1",
+    "delivered": false,
+    "bottle_received": false
+  },
+   {
+    "id": 20,
+    "name":"C P Trivedi Ji" ,
+    "quantity": "1",
+    "delivered": false,
+    "bottle_received": false
+  },
+   {
+    "id":21 ,
+    "name":"Lokesh Ji (Colony)" ,
+    "quantity": "1/2",
+    "delivered": false,
+    "bottle_received": false
+  },
+   {
+    "id":22 ,
+    "name":"Harsh Sen" ,
+    "quantity": "1/2",
+    "delivered": false,
+    "bottle_received": false
+  },
+  {
+    "id":23 ,
+    "name":"Mahesh Soni" ,
+    "quantity": "1/2",
+    "delivered": false,
+    "bottle_received": false
+  },
+  {
+    "id":24 ,
+    "name":"Lekhraj Bhaiya" ,
+    "quantity": "1/2",
+    "delivered": false,
+    "bottle_received": false
+  },
+  {
+    "id":25 ,
+    "name":"Om Ji Sen" ,
+    "quantity": "1/2",
+    "delivered": false,
+    "bottle_received": false
+  },
+  {
+    "id":26 ,
+    "name":"Meer Ji Hussain" ,
+    "quantity": "1/2",
+    "delivered": false,
+    "bottle_received": false
+  },
+  {
+    "id":27 ,
+    "name":"Padosi (Meer Ji Hussain)" ,
+    "quantity": "1/2",
+    "delivered": false,
+    "bottle_received": false
+  }
 ]

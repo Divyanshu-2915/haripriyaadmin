@@ -126,13 +126,6 @@
     "bottle_received": false
   },
   {
-    "id": 19 ,
-    "name":"Nuur Ji Hussain",
-    "quantity": "1",
-    "delivered": false,
-    "bottle_received": false
-  },
-  {
     "id": 20,
     "name": "Radha Di",
     "quantity": "1/2",
@@ -212,13 +205,6 @@
   {
     "id": 31,
     "name": "Khayali Lal Ji",
-    "quantity": "1/2",
-    "delivered": false ,
-    "bottle_received": false
-  },
-  {
-    "id": 32,
-    "name": "Pooja Tailor",
     "quantity": "1/2",
     "delivered": false ,
     "bottle_received": false

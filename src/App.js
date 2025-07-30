@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-route
 import MorningChecklist from './Pages/Morning_Dilevery';
 import EveningChecklist from './Pages/Evening_Dilevery';
 import ConsumerTable from './Pages/Consumer';
-
+import BillGenerator from './Pages/Bill_Generator';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -49,7 +49,7 @@ const App = () => {
         <Route path="/evening" element={<EveningChecklist />} />
         {/* You can create placeholder components for the rest if needed */}
         <Route path="/consumer" element={<ConsumerTable/>} />
-        <Route path="/bill" element={<div className="p-6">Bill Creation Page</div>} />
+        <Route path="/bill" element={<BillGenerator/>} />
       </Routes>
     </Router>
   );

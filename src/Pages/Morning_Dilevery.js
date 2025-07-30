@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import data from './Morning_List.json';
+import data from './Delivery_List.json';
 import { saveAs } from 'file-saver';
 
 function MorningChecklist() {
@@ -120,6 +120,8 @@ const downloadChecklist = () => {
           <p className="text-sm text-gray-600 mt-1">
             🧮 Count → 1 Litre: <strong>{oneLitre}</strong> | 1/2 Litre: <strong>{halfLitre}</strong>
           </p>
+          <p>Morning One Litter - 20</p>
+          <p>Morning Half Litter - 8</p>
         </div>
         <div className="flex gap-2 flex-wrap">
           <button

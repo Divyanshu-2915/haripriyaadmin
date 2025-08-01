@@ -40,10 +40,11 @@ function EnglishBill() {
       return;
     }
 
-    const message = `Hello 🙏, ${selectedConsumer.name},
+    const message = ` ${QRImage}.
+    Hello 🙏, ${selectedConsumer.name},
 
 This is a polite reminder from HariPriya Dairy Farm.
-Your June milk bill of ₹${amount} is pending.
+Your July milk bill of ₹${amount} is pending.
 
 Kindly pay the amount before 5th of August 2025 to continue uninterrupted service. 
 Please ignore this message if you have already made the payment.
@@ -91,7 +92,7 @@ Thank you for your support!
             <p>Hello 🙏,</p>
             <p className="mt-1"><strong>{selectedConsumer.name}</strong>,</p>
             <p className="mt-2">
-              This is a polite reminder from HariPriya Dairy Farm, Your June month milk bill of <strong>₹{amount || '____'}</strong> is pending.
+              This is a polite reminder from HariPriya Dairy Farm, Your July month milk bill of <strong>₹{amount || '____'}</strong> is pending.
             </p>
             <p className="mt-2">
               Kindly pay the amount before 5th of August 2025 to continue uninterrupted service.
@@ -141,7 +142,7 @@ Thank you for your support!
             <button>
               <a
                 href={`https://wa.me/91${selectedConsumer.phone}?text=${encodeURIComponent(
-                  `${QRImage}. /n/n Hello 🙏, ${selectedConsumer.name},\n\nThis is a polite reminder from HariPriya Dairy Farm, Your June month milk bill of ₹${amount} is pending.\n\n Kindly pay the amount before 5th of August 2025 to continue uninterrupted service.\nPlease ignore this message if you have already made the payment.\n\nThank you for your support!\n— Haripriya Dairy Farm`
+                  `${QRImage}. /n/n Hello 🙏, ${selectedConsumer.name},\n\nThis is a polite reminder from HariPriya Dairy Farm, Your July month milk bill of ₹${amount} is pending.\n\n Kindly pay the amount before 5th of August 2025 to continue uninterrupted service.\nPlease ignore this message if you have already made the payment.\n\nThank you for your support!\n— Haripriya Dairy Farm`
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"

@@ -2,24 +2,27 @@ import React, { useState } from 'react';
 import data from './Delivery_List.json';
 import { saveAs } from 'file-saver';
 
-function EveningCheckList() {
+function MorningChecklist() {
   const [list, setList] = useState(data);
   const [searchTerm, setSearchTerm] = useState("");
   const [newName, setNewName] = useState("");
   const [newQuantity, setNewQuantity] = useState("1");
 
+  // ✅ Toggle delivery checkbox
   const toggleCheck = (id) => {
     setList(list.map(item =>
       item.id === id ? { ...item, completed: !item.completed } : item
     ));
   };
 
+  // ✅ Toggle bottle return checkbox
   const toggleBottleReturn = (id) => {
     setList(list.map(item =>
       item.id === id ? { ...item, bottleReturned: !item.bottleReturned } : item
     ));
   };
 
+  // ✅ Reset all checkboxes
   const resetChecklist = () => {
     setList(list.map(item => ({
       ...item,
@@ -28,6 +31,7 @@ function EveningCheckList() {
     })));
   };
 
+  // ✅ Add new entry
   const handleAddEntry = (e) => {
     e.preventDefault();
     if (newName.trim() === "") return;
@@ -37,8 +41,7 @@ function EveningCheckList() {
       name: newName,
       quantity: newQuantity,
       completed: false,
-      bottleReturned: false,
-      amount: ""
+      bottleReturned: false
     };
 
     setList([...list, newItem]);
@@ -46,44 +49,44 @@ function EveningCheckList() {
     setNewQuantity("1");
   };
 
-  const handleAmountChange = (id, newAmount) => {
-    setList(list.map(item =>
-      item.id === id ? { ...item, amount: newAmount } : item
-    ));
-  };
+  // ✅ Download checklist
+const downloadChecklist = () => {
+  const completed = list.filter(item => item.completed);
+  const remaining = list.filter(item => !item.completed);
 
-  const downloadChecklist = () => {
-    const completed = list.filter(item => item.completed);
-    const remaining = list.filter(item => !item.completed);
+  let content = `🌅 Morning Delivery Checklist\n\n✅ Delivered (${completed.length}):\n`;
+  completed.forEach((item, index) => {
+    content += `  ${index + 1}. ${item.name} - ${item.quantity} ${
+      item.bottleReturned ? "(bottle returned)" : "(bottle not returned)"
+    }\n`;
+  });
 
-    let content = `🌅 Evening Delivery Checklist\n\n✅ Delivered (${completed.length}):\n`;
-    completed.forEach((item, index) => {
-      content += `  ${index + 1}. ${item.name} - ${item.quantity}${
-        item.amount ? ` ₹${item.amount}` : ""
-      } ${item.bottleReturned ? "(bottle returned)" : "(bottle not returned)"}\n`;
-    });
+  content += `\n⏳ Remaining (${remaining.length}):\n`;
+  remaining.forEach((item, index) => {
+    content += `  ${index + 1}. ${item.name} - ${item.quantity} ${
+      item.bottleReturned ? "(bottle returned)" : "(bottle not returned)"
+    }\n`;
+  });
 
-    content += `\n⏳ Remaining (${remaining.length}):\n`;
-    remaining.forEach((item, index) => {
-      content += `  ${index + 1}. ${item.name} - ${item.quantity}${
-        item.amount ? ` ₹${item.amount}` : ""
-      } ${item.bottleReturned ? "(bottle returned)" : "(bottle not returned)"}\n`;
-    });
+  // ✅ Get current date
+  const now = new Date();
+  const formattedDate = `${String(now.getDate()).padStart(2, '0')}-${String(
+    now.getMonth() + 1
+  ).padStart(2, '0')}-${now.getFullYear()}`;
 
-    const now = new Date();
-    const formattedDate = `${String(now.getDate()).padStart(2, '0')}-${String(
-      now.getMonth() + 1
-    ).padStart(2, '0')}-${now.getFullYear()}`;
+  const filename = `${formattedDate} Morning Delivery.txt`;
 
-    const filename = `${formattedDate} Evening Delivery.txt`;
-    const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
-    saveAs(blob, filename);
-  };
+  const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+  saveAs(blob, filename);
+};
 
+
+  // ✅ Filter by name
   const filteredList = list.filter(item =>
     item.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  // ✅ Count quantities
   const calculateQuantities = () => {
     let oneLitre = 0;
     let halfLitre = 0;
@@ -110,14 +113,15 @@ function EveningCheckList() {
 
   return (
     <div className="w-full max-w-screen-sm lg:max-w-screen-md mx-auto p-4 mt-6 bg-white rounded-xl shadow-lg">
+      {/* Header */}
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mb-4">
         <div>
-          <h1 className="text-xl font-bold">🗓️ Evening Delivery Checklist</h1>
+          <h1 className="text-xl font-bold">🗓️ Morning Delivery Checklist</h1>
           <p className="text-sm text-gray-600 mt-1">
             🧮 Count → 1 Litre: <strong>{oneLitre}</strong> | 1/2 Litre: <strong>{halfLitre}</strong>
           </p>
-          <p>Evening One Litter - 20</p>
-          <p>Evening Half Litter - 15</p>
+          <p>Morning One Litter - 20</p>
+          <p>Morning Half Litter - 8</p>
         </div>
         <div className="flex gap-2 flex-wrap">
           <button
@@ -135,6 +139,7 @@ function EveningCheckList() {
         </div>
       </div>
 
+      {/* Search */}
       <input
         type="text"
         placeholder="🔍 Search by name..."
@@ -143,27 +148,25 @@ function EveningCheckList() {
         className="w-full px-4 py-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
       />
 
+      {/* Checklist */}
       <ul className="space-y-2 max-h-[50vh] overflow-y-auto pr-1 mb-6">
         {filteredList.map((item) => (
           <li
             key={item.id}
             className="flex flex-col sm:flex-row sm:items-center justify-between bg-gray-50 px-3 py-2 rounded-md"
           >
+            {/* Name and Quantity */}
             <div className="flex-1 text-sm sm:text-base mb-1 sm:mb-0">
               <span className={`font-medium ${item.completed ? 'line-through text-gray-500' : ''}`}>
                 {item.name}
               </span>{" "}
-              - <span className="text-blue-600 font-semibold">{item.quantity}</span>
-              <input
-                type="text"
-                value={item.amount || ""}
-                onChange={(e) => handleAmountChange(item.id, e.target.value)}
-                placeholder="₹ Amount"
-                className="ml-2 px-2 py-1 border border-gray-300 rounded w-24 text-sm"
-              />
+              -{" "}
+              <span className="text-blue-600 font-semibold">{item.quantity}</span>
             </div>
 
+            {/* Checkboxes */}
             <div className="flex gap-4 items-center">
+              {/* Delivery */}
               <label className="flex items-center gap-2 cursor-pointer">
                 <input
                   type="checkbox"
@@ -174,6 +177,7 @@ function EveningCheckList() {
                 <span className="text-sm">Delivered</span>
               </label>
 
+              {/* Bottle */}
               <label className="flex items-center gap-2 cursor-pointer">
                 <input
                   type="checkbox"
@@ -225,4 +229,4 @@ function EveningCheckList() {
   );
 }
 
-export default EveningCheckList;
+export default MorningChecklist;

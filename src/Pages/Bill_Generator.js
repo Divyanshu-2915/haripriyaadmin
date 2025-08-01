@@ -138,6 +138,19 @@ function BillSearch() {
             >
               🔄 Reset
             </button>
+            <button>
+              <a
+  href={`https://wa.me/91${selectedConsumer.phone}?text=${encodeURIComponent(
+    `Hello 🙏, ${selectedConsumer.name},\n\nThis is a reminder that the milk delivery amount for this month is ₹${amount}.\n\nKindly pay the amount and close the bill at your earliest convenience.\nPlease ignore this message if you have already made the payment.\n\nThank you for your support!\n— Haripriya Dairy Farm`
+  )}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex-1 bg-green-500 text-white py-2 rounded hover:bg-green-600 text-center"
+>
+  📲 Share on WhatsApp
+</a>
+
+            </button>
           </div>
         </>
       )}

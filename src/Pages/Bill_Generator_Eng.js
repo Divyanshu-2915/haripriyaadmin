@@ -141,7 +141,7 @@ Thank you for your support!
             <button>
               <a
                 href={`https://wa.me/91${selectedConsumer.phone}?text=${encodeURIComponent(
-                  `Hello 🙏, ${selectedConsumer.name},\n\nThis is a reminder that the milk delivery amount for this month is ₹${amount}.\n\nKindly pay the amount and close the bill at your earliest convenience.\nPlease ignore this message if you have already made the payment.\n\nThank you for your support!\n— Haripriya Dairy Farm`
+                  `${QRImage}. /n/n Hello 🙏, ${selectedConsumer.name},\n\nThis is a polite reminder from HariPriya Dairy Farm, Your June month milk bill of ₹${amount} is pending.\n\n Kindly pay the amount before 5th of August 2025 to continue uninterrupted service.\nPlease ignore this message if you have already made the payment.\n\nThank you for your support!\n— Haripriya Dairy Farm`
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"

@@ -40,7 +40,7 @@ function EnglishBill() {
       return;
     }
 
-    const message = ` ${QRImage}.
+    const message = ` 
     Hello 🙏, ${selectedConsumer.name},
 
 This is a polite reminder from HariPriya Dairy Farm.
@@ -48,6 +48,8 @@ Your July milk bill of ₹${amount} is pending.
 
 Kindly pay the amount before 5th of August 2025 to continue uninterrupted service. 
 Please ignore this message if you have already made the payment.
+
+Please share the screenshot after the payment is done.
 
 Thank you for your support!
 — Haripriya Dairy Farm`;
@@ -99,6 +101,7 @@ Thank you for your support!
               <br />
               Please ignore this message if you have already made the payment.
             </p>
+            <p>Please share the screenshot after the payment is done.</p>
             <p className="mt-2">
               Thank you for your support!
               <br />— Haripriya Dairy Farm
@@ -142,7 +145,7 @@ Thank you for your support!
             <button>
               <a
                 href={`https://wa.me/91${selectedConsumer.phone}?text=${encodeURIComponent(
-                  `${QRImage}. /n/n Hello 🙏, ${selectedConsumer.name},\n\nThis is a polite reminder from HariPriya Dairy Farm, Your July month milk bill of ₹${amount} is pending.\n\n Kindly pay the amount before 5th of August 2025 to continue uninterrupted service.\nPlease ignore this message if you have already made the payment.\n\nThank you for your support!\n— Haripriya Dairy Farm`
+                  `Hello 🙏, ${selectedConsumer.name},\n\nThis is a polite reminder from HariPriya Dairy Farm, Your July month milk bill of ₹${amount} is pending.\n\n Kindly pay the amount before 5th of August 2025 to continue uninterrupted service.\nPlease share the screenshot after the payment is done.\nPlease ignore this message if you have already made the payment.\n\nThank you for your support!\n— Haripriya Dairy Farm`
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"

@@ -43,7 +43,7 @@ function EnglishBill() {
     const message = `Hello 🙏, ${selectedConsumer.name},
 
 This is a polite reminder from HariPriya Dairy Farm.
-Your monthly milk bill of ₹${amount} is pending.
+Your June milk bill of ₹${amount} is pending.
 
 Kindly pay the amount before 5th of August 2025 to continue uninterrupted service. 
 Please ignore this message if you have already made the payment.

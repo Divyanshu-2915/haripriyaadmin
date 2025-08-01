@@ -91,7 +91,7 @@ Thank you for your support!
             <p>Hello 🙏,</p>
             <p className="mt-1"><strong>{selectedConsumer.name}</strong>,</p>
             <p className="mt-2">
-              This is a polite reminder from HariPriya Dairy Farm, Your monthly milk bill of <strong>₹{amount || '____'}</strong> is pending.
+              This is a polite reminder from HariPriya Dairy Farm, Your June month milk bill of <strong>₹{amount || '____'}</strong> is pending.
             </p>
             <p className="mt-2">
               Kindly pay the amount before 5th of August 2025 to continue uninterrupted service.
@@ -145,7 +145,7 @@ Thank you for your support!
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 bg-green-500 text-white py-2 rounded hover:bg-green-600 text-center"
+                className="lex-1 bg-green-500 text-white py-2 rounded hover:bg-green-600 text-center"
               >
                 📲 Share on WhatsApp
               </a>

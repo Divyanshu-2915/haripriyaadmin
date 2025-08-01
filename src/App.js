@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-route
 import MorningChecklist from './Pages/Morning_Dilevery';
 import EveningChecklist from './Pages/Evening_Dilevery';
 import ConsumerTable from './Pages/Consumer';
-import BillGenerator from './Pages/Bill_Generator';
+import EnglishBill from './Pages/Bill_Generator_Eng';
+import HindiBill from './Pages/Bill_Generator_Hin';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -31,9 +32,15 @@ const Home = () => {
         </button>
         <button
           className='border-2 border-black w-72 h-16 rounded-full'
-          onClick={() => navigate('/bill')}
+          onClick={() => navigate('/billeng')}
         >
-          Bill Creation
+          Bill Creation English
+        </button>
+        <button
+          className='border-2 border-black w-72 h-16 rounded-full'
+          onClick={() => navigate('/billhin')}
+        >
+          Bill Creation Hindi
         </button>
       </div>
     </main>
@@ -49,7 +56,8 @@ const App = () => {
         <Route path="/evening" element={<EveningChecklist />} />
         {/* You can create placeholder components for the rest if needed */}
         <Route path="/consumer" element={<ConsumerTable/>} />
-        <Route path="/bill" element={<BillGenerator/>} />
+        <Route path="/billeng" element={<EnglishBill/>} />
+        <Route path="/billhin" element={<HindiBill/>} />
       </Routes>
     </Router>
   );

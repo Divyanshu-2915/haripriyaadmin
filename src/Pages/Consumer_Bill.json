@@ -140,7 +140,7 @@
   {
     "id": 24,
     "name": "Suresh Ji Sen",
-    "phone": "",
+    "phone": "9414786274",
     "product": "Milk"
   },
   {
@@ -176,7 +176,7 @@
   {
     "id": 30,
     "name": "Khayali Lal Ji",
-    "phone": "",
+    "phone": "7665902277",
     "product": "Milk"
   },
   {
@@ -339,6 +339,24 @@
     "id": 57,
     "name": "Ladu Bhai Ji",
     "phone": "",
+    "product": "Milk"
+  },
+  {
+    "id": 58,
+    "name": "Shankar Ji Gurjar",
+    "phone": "9783299571",
+    "product": "Milk"
+  },
+  {
+    "id": 59,
+    "name": "Laxman Ji Reger",
+    "phone": "8769072635",
+    "product": "Milk"
+  },
+  {
+    "id": 60,
+    "name": "Khayali Lal Ji",
+    "phone": "7665902277",
     "product": "Milk"
   }
 ]

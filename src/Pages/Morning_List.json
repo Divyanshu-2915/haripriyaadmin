@@ -71,118 +71,97 @@
   },
    {
     "id": 11,
-    "name":"Bunty Singh Ji" ,
-    "quantity": "1",
-    "delivered": false,
-    "bottle_received": false
-  },
-   {
-    "id": 12 ,
     "name":"Ajay Sen Ji" ,
     "quantity": "1",
     "delivered": false,
     "bottle_received": false
   },
    {
-    "id": 13 ,
+    "id": 12 ,
     "name":"Abhilekh Bhaiya (Kaku)" ,
     "quantity": "1",
     "delivered": false,
     "bottle_received": false
   },
   {
-    "id":14,
+    "id":13,
     "name":"Nuur Ji",
     "quantity": "1",
     "delivered": false,
     "bottle_received": false
   },
    {
-    "id": 15,
+    "id": 14,
     "name":"Vinit Ji Ved" ,
     "quantity": "1",
     "delivered": false,
     "bottle_received": false
   },
    {
-    "id":16,
+    "id":15,
     "name":"Om Ji LIC" ,
     "quantity": "1",
     "delivered": false,
     "bottle_received": false
   },
    {
-    "id": 17,
+    "id": 16,
     "name":"Luv Kumar Ji (Colony)" ,
     "quantity": "2",
     "delivered": false,
     "bottle_received": false
   },
    {
-    "id": 18,
-    "name":"Sunny Jain" ,
-    "quantity": "1",
-    "delivered": false,
-    "bottle_received": false
-  },
-   {
-    "id":19,
+    "id":17,
     "name":"Pinkesh Bhati" ,
     "quantity": "1",
     "delivered": false,
     "bottle_received": false
   },
    {
-    "id":20,
+    "id":18,
     "name":"Raju Ji Agarwal" ,
     "quantity": "1",
     "delivered": false,
     "bottle_received": false
   },
    {
-    "id": 21,
-    "name":"C P Trivedi Ji" ,
-    "quantity": "1",
-    "delivered": false,
-    "bottle_received": false
-  },
-   {
-    "id":22,
+    "id":19,
     "name":"Lokesh Ji (Colony)" ,
     "quantity": "1/2",
     "delivered": false,
     "bottle_received": false
   },
    {
-    "id":23 ,
+    "id":20,
     "name":"Harsh Sen" ,
     "quantity": "1/2",
     "delivered": false,
     "bottle_received": false
   },
   {
-    "id":24 ,
+    "id":21,
     "name":"Mahesh Soni" ,
     "quantity": "1/2",
     "delivered": false,
     "bottle_received": false
   },
   {
-    "id":25 ,
+    "id":22,
     "name":"Lekhraj Bhaiya" ,
     "quantity": "1/2",
     "delivered": false,
     "bottle_received": false
   },
   {
-    "id":26 ,
+    "id":23,
     "name":"Om Ji Sen" ,
     "quantity": "1/2",
     "delivered": false,
     "bottle_received": false
   },
   {
-    "id":27 ,
+    "id":24,
     "name":"Meer Ji Hussain" ,
     "quantity": "1/2",
     "delivered": false,
@@ -190,7 +169,7 @@
     "amount": ""
   },
   {
-    "id":28 ,
+    "id":25,
     "name":"Ladu Bhai (Meer Ji Hussain Padosi)" ,
     "quantity": "1/2",
     "delivered": false,

@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import consumerData from './Consumer_Bill.json';
 import QRImage from '../QR.jpg';
 import HeaderImage from '../HeaderImage.png';
-
+///8058786786
 function HindiBill() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedConsumer, setSelectedConsumer] = useState(null);

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Gayatri Ma'am",
-    "phone": "",
+    "phone": "7568432990",
     "product": "Milk"
   },
   {
@@ -25,7 +25,7 @@
   },
   {
     "id": 5,
-    "name": "Naveen Sandwich",
+    "name": "Naveen Ji Prajapat",
     "phone": "9950176240",
     "product": "Milk"
   },
@@ -38,12 +38,12 @@
   {
     "id": 7,
     "name": "Raju Ji Chouhan",
-    "phone": "8619917545",
+    "phone": "9672800466",
     "product": "Milk"
   },
   {
     "id": 8,
-    "name": "Nathu Ji Reger",
+    "name": "Nathu Lal Ji Reger",
     "phone": "",
     "product": "Milk"
   },
@@ -67,20 +67,20 @@
   },
   {
     "id": 12,
-    "name": "Tushar Rajupt",
-    "phone": "",
+    "name": "Sachin Power",
+    "phone": "9928135328",
     "product": "Milk"
   },
   {
     "id": 13,
     "name": "Mahendra Ji Sir",
-    "phone": "",
+    "phone": "8005840489",
     "product": "Milk"
   },
   {
     "id": 14,
     "name": "Pankaj Ji Joshi",
-    "phone": "9001009090/8058786786",
+    "phone": "9001009090",
     "product": "Milk"
   },
   {
@@ -103,26 +103,26 @@
   },
   {
     "id": 18,
-    "name": "Nuur Ji Hussain",
-    "phone": "",
+    "name": "Nuur Ji",
+    "phone": "7230849197",
     "product": "Milk"
   },
   {
     "id": 19,
-    "name": "Radha Di",
+    "name": "Radha Dadhich",
     "phone": "8386077220",
     "product": "Milk"
   },
   {
     "id": 20,
     "name": "Chetan Ji",
-    "phone": "",
+    "phone": "9829475635",
     "product": "Milk"
   },
   {
     "id": 21,
     "name": "Ashish Ji Songara",
-    "phone": "8302555045",
+    "phone": "9950086726",
     "product": "Milk"
   },
   {
@@ -140,7 +140,7 @@
   {
     "id": 24,
     "name": "Suresh Ji Sen",
-    "phone": "",
+    "phone": "9414786274",
     "product": "Milk"
   },
   {
@@ -152,7 +152,7 @@
   {
     "id": 26,
     "name": "Dilip Ji Pandiya",
-    "phone": "9414165371",
+    "phone": "8879171717",
     "product": "Milk"
   },
   {
@@ -163,7 +163,7 @@
   },
   {
     "id": 28,
-    "name": "Keshav Ji Madariya",
+    "name": "Keshav Ji Sir",
     "phone": "9667487064",
     "product": "Milk"
   },
@@ -176,7 +176,7 @@
   {
     "id": 30,
     "name": "Khayali Lal Ji",
-    "phone": "",
+    "phone": "7665902277",
     "product": "Milk"
   },
   {
@@ -187,13 +187,13 @@
   },
   {
     "id": 32,
-    "name": "Pooja Ji Salvi (Complex)",
+    "name": "Pooja Ji Salvi",
     "phone": "9352595143",
     "product": "Milk"
   },
   {
     "id": 33,
-    "name": "Vishnu Reger Ji",
+    "name": "Vishnu Ji  Reger",
     "phone": "9983361136",
     "product": "Milk"
   },
@@ -205,26 +205,26 @@
   },
   {
     "id": 35,
-    "name": "Devi Singh Ji Kuldeep",
-    "phone": "",
+    "name": "Devi Singh Ji Chouhan",
+    "phone": "7976629470",
     "product": "Milk"
   },
   {
     "id": 36,
-    "name": "Kailash Singh Ji",
+    "name": "Kailash Singh Ji Chouhan",
     "phone": "9414786069",
     "product": "Milk"
   },
   {
     "id": 37,
-    "name": "Raguveer Singh Ji (Papsa)",
-    "phone": "",
+    "name": "Raguveer Singh Ji Panwar",
+    "phone": "7976117174",
     "product": "Milk"
   },
   {
     "id": 38,
-    "name": "Akash Bhaiya HDFC",
-    "phone": "",
+    "name": "Nagendra Ji Mathur",
+    "phone": "9982031149",
     "product": "Milk"
   },
   {
@@ -236,7 +236,7 @@
   {
     "id": 40,
     "name": "Pawan Ji Puri",
-    "phone": "",
+    "phone": "7610913940",
     "product": "Milk"
   },
   {
@@ -247,13 +247,13 @@
   },
   {
     "id": 42,
-    "name": "Ajay Sen Ji",
+    "name": "Ajay Ji  Sen",
     "phone": "7611081628",
     "product": "Milk"
   },
   {
     "id": 43,
-    "name": "Abhilekh Bhaiya (Kaku)",
+    "name": "Abhilekh Ji Sharma",
     "phone": "7976170569",
     "product": "Milk"
   },
@@ -271,55 +271,55 @@
   },
   {
     "id": 46,
-    "name": "Luv Kumar Ji (Colony)",
-    "phone": "",
+    "name": "Love Kumar Ji Meena",
+    "phone": "9460601693",
     "product": "Milk"
   },
   {
     "id": 47,
-    "name": "Sanjay Ji Jain",
+    "name": "Sanskar Ji Pokharna",
     "phone": "9828082226",
     "product": "Milk"
   },
   {
     "id": 48,
-    "name": "Pinkesh Bhati",
+    "name": "Pinkesh Ji Bhati",
     "phone": "9610008295",
     "product": "Milk"
   },
   {
     "id": 49,
-    "name": "Raju Ji Agarwal",
+    "name": "Rajesh Ji Agarwal",
     "phone": "9414300276",
     "product": "Milk"
   },
   {
     "id": 50,
-    "name": "C P Trivedi Ji",
+    "name": "C P Ji Trivedi",
     "phone": "9435592574",
     "product": "Milk"
   },
   {
     "id": 51,
-    "name": "Lokesh Ji (Colony)",
+    "name": "Lokesh Ji",
     "phone": "",
     "product": "Milk"
   },
   {
     "id": 52,
-    "name": "Harsh Sen",
+    "name": "Harsh Ji Sen",
     "phone": "9772351916",
     "product": "Milk"
   },
   {
     "id": 53,
-    "name": "Mahesh Soni",
+    "name": "Mahesh Ji Soni",
     "phone": "9057260558",
     "product": "Milk"
   },
   {
     "id": 54,
-    "name": "Lekhraj Bhaiya",
+    "name": "Ramesh Ji Laxkar",
     "phone": "9782462247",
     "product": "Milk"
   },
@@ -337,8 +337,38 @@
   },
   {
     "id": 57,
-    "name": "Padosi (Meer Ji Hussain)",
-    "phone": "",
+    "name": "Rafeeq Ji Mohamad",
+    "phone": "7742994949",
+    "product": "Milk"
+  },
+  {
+    "id": 58,
+    "name": "Shankar Ji Gurjar",
+    "phone": "9783299571",
+    "product": "Milk"
+  },
+  {
+    "id": 59,
+    "name": "Laxman Ji Reger",
+    "phone": "8769072635",
+    "product": "Milk"
+  },
+  {
+    "id" : 60,
+    "name" : "Rakesh Ji Garg",
+    "phone": "9772432731",
+    "product": "Milk"
+  },
+  {
+    "id": 61,
+    "name": "Kuldeep Ji Hinoniya",
+    "phone": "8619360900",
+    "product": "Milk"
+  },
+  {
+    "id": 62,
+    "name": "Umeed Ji Garg",
+    "phone": "9772432731",
     "product": "Milk"
   }
 ]

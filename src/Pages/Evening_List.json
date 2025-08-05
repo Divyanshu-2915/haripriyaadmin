@@ -1,219 +1,47 @@
 [
-  {
-    "id": 1 ,
-    "name":"Gayatri Ma'am" ,
-    "quantity": "1 + 1/2",
-    "delivered": false,
-    "bottle_received": false
-  },
-   {
-    "id": 2 ,
-    "name":"Vijay Medical" ,
-    "quantity": "1",
-    "delivered": false,
-    "bottle_received": false
-  },
-   {
-    "id": 3 ,
-    "name":"Shakti Bhaiya (Kiran Honda)" ,
-    "quantity": "1",
-    "delivered": false,
-    "bottle_received": false
-  },
-   {
-    "id":  4,
-    "name":"Bajrang IceCream",
-    "quantity": "2",
-    "delivered": false,
-    "bottle_received": false
-  },
-   {
-    "id": 5 ,
-    "name":"Naveen Sandwich",
-    "quantity": "2",
-    "delivered": false,
-    "bottle_received": false
-  },
-   {
-    "id": 6 ,
-    "name":"Rajender Ji Sethiya",
-    "quantity": "1",
-    "delivered": false,
-    "bottle_received": false
-  },
-   {
-    "id": 7 ,
-    "name":"Raju Ji Chouhan",
-    "quantity": "1",
-    "delivered": false,
-    "bottle_received": false
-  },
-   {
-    "id":  8,
-    "name":"Nathu Ji Reger",
-    "quantity": "1 + 1/2",
-    "delivered": false,
-    "bottle_received": false
-  },
-   {
-    "id": 9 ,
-    "name":"Sohan Ji Saragara",
-    "quantity": "1",
-    "delivered": false,
-    "bottle_received": false
-  },
-   {
-    "id": 10 ,
-    "name":"Kalu Kishan Ji",
-    "quantity": "1",
-    "delivered": false,
-    "bottle_received": false
-  },
-   {
-    "id": 11 ,
-    "name":"Naresh Ji Reger",
-    "quantity": "1",
-    "delivered": false,
-    "bottle_received": false
-  },
-   {
-    "id": 12 ,
-    "name":"Tushar Rajupt",
-    "quantity": "1",
-    "delivered": false,
-    "bottle_received": false
-  },
-   {
-    "id": 13 ,
-    "name":"Mahendra Ji Sir",
-    "quantity": "1",
-    "delivered": false,
-    "bottle_received": false
-  },
-   {
-    "id":  14,
-    "name":"Pankaj Ji Joshi",
-    "quantity": "1",
-    "delivered": false,
-    "bottle_received": false
-  },
-   {
-    "id":  15,
-    "name":"Prakash Ji Tailor",
-    "quantity": "1",
-    "delivered": false,
-    "bottle_received": false
-  },
-   {
-    "id":  16,
-    "name":"Mustak Ji (Vinit Bhaiya)",
-    "quantity": "1",
-    "delivered": false,
-    "bottle_received": false
-  },
-   {
-    "id":  17,
-    "name":"Rinku Di",
-    "quantity": "1",
-    "delivered": false,
-    "bottle_received": false
-  },
-   {
-    "id":  18,
-    "name":"F K Fashion (Charniya)",
-    "quantity": "2",
-    "delivered": false,
-    "bottle_received": false
-  },
-  {
-    "id": 20,
-    "name": "Radha Di",
-    "quantity": "1/2",
-    "delivered": false ,
-    "bottle_received": false
-  },
-  {
-    "id": 21,
-    "name": "Chetan Ji",
-    "quantity": "1/2",
-    "delivered": false ,
-    "bottle_received": false
-  },
-  {
-    "id": 22,
-    "name": "Ashish Ji Songara",
-    "quantity": "1/2",
-    "delivered": false ,
-    "bottle_received": false
-  },
-  {
-    "id": 23,
-    "name": "Karan Ved",
-    "quantity": "1/2",
-    "delivered": false ,
-    "bottle_received": false
-  },
-  {
-    "id": 24,
-    "name": "Ajit Singh Ji",
-    "quantity": "1/2",
-    "delivered": false ,
-    "bottle_received": false
-  },
-  {
-    "id": 25,
-    "name": "Suresh Ji Sen",
-    "quantity": "1/2",
-    "delivered": false ,
-    "bottle_received": false
-  },
-  {
-    "id": 26,
-    "name": "Dinesh Didwaniya",
-    "quantity": "1/2",
-    "delivered": false ,
-    "bottle_received": false
-  },
-  {
-    "id": 27,
-    "name": "Dilip Ji Pandiya",
-    "quantity": "1/2",
-    "delivered": false ,
-    "bottle_received": false
-  },
-  {
-    "id": 28,
-    "name": "Arif Ji",
-    "quantity": "1/2",
-    "delivered": false ,
-    "bottle_received": false
-  },
-  {
-    "id": 29,
-    "name": "Keshav Ji Madariya",
-    "quantity": "1/2",
-    "delivered": false ,
-    "bottle_received": false
-  },
-  {
-    "id": 30,
-    "name": "Tarun Ji Vaishnav",
-    "quantity": "1/2",
-    "delivered": false ,
-    "bottle_received": false
-  },
-  {
-    "id": 31,
-    "name": "Khayali Lal Ji",
-    "quantity": "1/2",
-    "delivered": false ,
-    "bottle_received": false
-  },
-  {
-    "id": 33,
-    "name": "Prakash Ji Jinger",
-    "quantity": "1/2",
-    "delivered": false ,
-    "bottle_received": false
-  }
+  { 
+    "id": 1, 
+    "name": "Sohan Ji Saragara", 
+    "number": "", 
+    "quantity": "", 
+    "delivered": false, 
+    "bottle_received": false, 
+    "delivered_by": "" 
+    },
+  { 
+    "id": 2, 
+    "name": "Gayatri Ma'am", 
+    "number": "", 
+    "quantity": "", 
+    "delivered": false, 
+    "bottle_received": false, 
+    "delivered_by": "" 
+    },
+  { "id": 3, "name": "Vijay Medical", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 4, "name": "Shakti Bhaiya (Kiran Honda)", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 5, "name": "Naveen Sandwich", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 6, "name": "Rajender Ji Sethiya", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 7, "name": "Raju Ji Chouhan", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 8, "name": "Nathu Ji Reger", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 9, "name": "Kalu Kishan Ji", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 10, "name": "Naresh Ji Reger", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 11, "name": "Tushar Rajupt", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 12, "name": "Mahendra Ji Sir", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 13, "name": "Pankaj Ji Joshi", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 14, "name": "Prakash Ji Tailor", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 15, "name": "F K Fashion (Charniya)", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 16, "name": "Radha Di", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 17, "name": "Chetan Ji", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 18, "name": "Ashish Ji Songara", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 19, "name": "Karan Ved", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 20, "name": "Ajit Singh Ji", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 21, "name": "Suresh Ji Sen", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 22, "name": "Dilip Ji Pandiya", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 23, "name": "Arif Ji", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 24, "name": "Keshav Ji Madariya", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 25, "name": "Tarun Ji Vaishnav", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 26, "name": "Khayali Lal Ji", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 27, "name": "Sunita", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 28, "name": "Imtahaz", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" },
+  { "id": 29, "name": "Shivpriya", "number": "", "quantity": "", "delivered": false, "bottle_received": false, "delivered_by": "" }
 ]

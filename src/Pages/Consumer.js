@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import consumerData from './Consumer_List.json';
+import consumerData from './Consumer_Bill_List.json';
 
 const ConsumerTable = () => {
   const [searchTerm, setSearchTerm] = useState("");

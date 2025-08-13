@@ -127,7 +127,7 @@
   },
   {
     "id": 15,
-    "name": "Love Kumar Ji",
+    "name": "L-27",
     "number": "",
     "quantity": "",
     "delivered": false,
@@ -272,6 +272,33 @@
   {
     "id": 31,
     "name": "Abhilekh Bhaiya (KAKU)",
+    "number": "",
+    "quantity": "",
+    "delivered": false,
+    "bottle_received": false,
+    "delivered_by": ""
+  },
+  {
+    "id": 32,
+    "name": "Raju Ji Vaishnav",
+    "number": "",
+    "quantity": "",
+    "delivered": false,
+    "bottle_received": false,
+    "delivered_by": ""
+  },
+  {
+    "id": 33,
+    "name": "Ad. Jagdish Ji",
+    "number": "",
+    "quantity": "",
+    "delivered": false,
+    "bottle_received": false,
+    "delivered_by": ""
+  },
+  {
+    "id": 34,
+    "name": "Saddam Ji",
     "number": "",
     "quantity": "",
     "delivered": false,

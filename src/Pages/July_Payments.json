@@ -3,372 +3,488 @@
     "id": 1,
     "name": "Gayatri Ma'am",
     "phone": "7568432990",
+    "amount": "2515",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 2,
     "name": "Vijay Medical",
     "phone": "6378255974",
+    "amount": "1595",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 3,
     "name": "Shakti Bhaiya (Kiran Honda)",
     "phone": "9784055797",
+    "amount": "",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 4,
     "name": "Bajrang IceCream",
     "phone": "",
+    "amount": "",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 5,
     "name": "Naveen Ji Prajapat",
     "phone": "9950176240",
+    "amount": "2565",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 6,
     "name": "Rajender Ji Sethiya",
     "phone": "9024459555",
+    "amount": "1540",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 7,
     "name": "Raju Ji Chouhan",
     "phone": "9672800466",
+    "amount": "1595",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 8,
     "name": "Nathu Lal Ji Reger",
-    "phone": "",
+    "phone": "9784267421",
+    "amount": "2502",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 9,
     "name": "Sohan Ji Saragara",
     "phone": "8890996858",
+    "amount": "3355",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 10,
-    "name": "Kalu Kishan Ji",
-    "phone": "8619360900",
+    "name": "Naresh Ji Reger",
+    "phone": "9929689264",
+    "amount": "1540",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 11,
-    "name": "Naresh Ji Reger",
-    "phone": "9929689264",
+    "name": "Sachin Power",
+    "phone": "9928135328",
+    "amount": "1485",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 12,
-    "name": "Sachin Power",
-    "phone": "9928135328",
+    "name": "Mahendra Ji Sir",
+    "phone": "8005840489",
+    "amount": "990",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 13,
-    "name": "Mahendra Ji Sir",
-    "phone": "8005840489",
+    "name": "Pankaj Ji Joshi",
+    "phone": "9001009090",
+    "amount": "715",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 14,
-    "name": "Pankaj Ji Joshi",
-    "phone": "9001009090",
+    "name": "Prakash Ji Tailor",
+    "phone": "9414785987",
+    "amount": "550",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 15,
-    "name": "Prakash Ji Tailor",
-    "phone": "9414785987",
+    "name": "Rinku Ji Kothari",
+    "phone": "",
+    "amount": "330",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 16,
-    "name": "Rinku Di",
-    "phone": "",
-    "product": "Milk"
-  },
-  {
-    "id": 17,
     "name": "F K Fashion (Charniya)",
     "phone": "7976109792",
+    "amount": "1182",
+    "paymentStatus": true,
     "product": "Milk/Ghee"
   },
   {
-    "id": 18,
+    "id": 17,
     "name": "Nuur Ji",
     "phone": "7230849197",
+    "amount": "1265",
+    "paymentStatus": true,
+    "product": "Milk"
+  },
+  {
+    "id": 18,
+    "name": "Radha Dadhich",
+    "phone": "8386077220",
+    "amount": "600",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 19,
-    "name": "Radha Dadhich",
-    "phone": "8386077220",
+    "name": "Chetan Ji",
+    "phone": "9829475635",
+    "amount": "650",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 20,
-    "name": "Chetan Ji",
-    "phone": "9829475635",
+    "name": "Ashish Ji Songara",
+    "phone": "9950086726",
+    "amount": "935",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 21,
-    "name": "Ashish Ji Songara",
-    "phone": "9950086726",
+    "name": "Karan Ved",
+    "phone": "7014622197",
+    "amount": "900",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 22,
-    "name": "Karan Ved",
-    "phone": "7014622197",
+    "name": "Ajit Singh Ji",
+    "phone": "8949705856",
+    "amount": "480",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 23,
-    "name": "Ajit Singh Ji",
-    "phone": "8949705856",
+    "name": "Suresh Ji Sen",
+    "phone": "9414786274",
+    "amount": "480",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 24,
-    "name": "Suresh Ji Sen",
-    "phone": "9414786274",
+    "name": "Dinesh Didwaniya",
+    "phone": "",
+    "amount": "900",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 25,
-    "name": "Dinesh Didwaniya",
-    "phone": "",
+    "name": "Dilip Ji Pandiya",
+    "phone": "8879171717",
+    "amount": "580",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 26,
-    "name": "Dilip Ji Pandiya",
-    "phone": "8879171717",
+    "name": "Arif Ji",
+    "phone": "9636120360",
+    "amount": "525",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 27,
-    "name": "Arif Ji",
-    "phone": "9636120360",
+    "name": "Keshav Ji Sir",
+    "phone": "9667487064",
+    "amount": "330",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 28,
-    "name": "Keshav Ji Sir",
-    "phone": "9667487064",
+    "name": "Tarun Ji Vaishnav",
+    "phone": "8949761770",
+    "amount": "390",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 29,
-    "name": "Tarun Ji Vaishnav",
-    "phone": "8949761770",
+    "name": "Khayali Lal Ji",
+    "phone": "7665902277",
+    "amount": "210",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 30,
-    "name": "Khayali Lal Ji",
-    "phone": "7665902277",
+    "name": "Prakash Ji Jinger",
+    "phone": "",
+    "amount": "450",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 31,
-    "name": "Prakash Ji Jinger",
-    "phone": "",
+    "name": "Pooja Ji Salvi",
+    "phone": "9352595143",
+    "amount": "1155",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 32,
-    "name": "Pooja Ji Salvi",
-    "phone": "9352595143",
+    "name": "Vishnu Ji  Reger",
+    "phone": "9983361136",
+    "amount": "1705",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 33,
-    "name": "Vishnu Ji  Reger",
-    "phone": "9983361136",
+    "name": "Kuldeep Singh DJ",
+    "phone": "7976629470",
+    "amount": "1705",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 34,
-    "name": "Kuldeep Singh DJ",
+    "name": "Devi Singh Ji Chouhan",
     "phone": "7976629470",
+    "amount": "1485",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 35,
-    "name": "Devi Singh Ji Chouhan",
-    "phone": "7976629470",
+    "name": "Kailash Singh Ji Chouhan",
+    "phone": "9414786069",
+    "amount": "1650",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 36,
-    "name": "Kailash Singh Ji Chouhan",
-    "phone": "9414786069",
+    "name": "Raguveer Singh Ji Panwar",
+    "phone": "7976117174",
+    "amount": "2475",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 37,
-    "name": "Raguveer Singh Ji Panwar",
-    "phone": "7976117174",
+    "name": "Nagendra Ji Mathur",
+    "phone": "9982031149",
+    "amount": "1540",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 38,
-    "name": "Nagendra Ji Mathur",
-    "phone": "9982031149",
+    "name": "Vijay Ji Vaishnav",
+    "phone": "7014311277",
+    "amount": "2475",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 39,
-    "name": "Vijay Ji Vaishnav",
-    "phone": "7014311277",
+    "name": "Pawan Ji Puri",
+    "phone": "7610913940",
+    "amount": "1595",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 40,
-    "name": "Pawan Ji Puri",
-    "phone": "7610913940",
+    "name": "Bunty Singh Ji",
+    "phone": "9983747244",
+    "amount": "1750",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 41,
-    "name": "Bunty Singh Ji",
-    "phone": "9983747244",
+    "name": "Ajay Ji  Sen",
+    "phone": "7611081628",
+    "amount": "",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 42,
-    "name": "Ajay Ji  Sen",
-    "phone": "7611081628",
+    "name": "Abhilekh Ji Sharma",
+    "phone": "7976170569",
+    "amount": "1402",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 43,
-    "name": "Abhilekh Ji Sharma",
-    "phone": "7976170569",
-    "product": "Milk"
-  },
-  {
-    "id": 44,
     "name": "Vinit Ji Ved",
     "phone": "7062307777",
+    "amount": "1485",
+    "paymentStatus": false,
     "product": "Milk/Ghee"
   },
   {
-    "id": 45,
+    "id": 44,
     "name": "Om Ji LIC",
     "phone": "7665381142",
+    "amount": "540",
+    "paymentStatus": false,
+    "product": "Milk"
+  },
+  {
+    "id": 45,
+    "name": "Love Kumar Ji Meena",
+    "phone": "9460601693",
+    "amount": "825",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 46,
-    "name": "Love Kumar Ji Meena",
-    "phone": "9460601693",
+    "name": "Sanskar Ji Pokharna",
+    "phone": "9828082226",
+    "amount": "1045",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 47,
-    "name": "Sanskar Ji Pokharna",
-    "phone": "9828082226",
+    "name": "Pinkesh Ji Bhati",
+    "phone": "9610008295",
+    "amount": "330",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 48,
-    "name": "Pinkesh Ji Bhati",
-    "phone": "9610008295",
+    "name": "Rajesh Ji Agarwal",
+    "phone": "9414300276",
+    "amount": "1045",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 49,
-    "name": "Rajesh Ji Agarwal",
-    "phone": "9414300276",
+    "name": "C P Ji Trivedi",
+    "phone": "9435592574",
+    "amount": "605",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 50,
-    "name": "C P Ji Trivedi",
-    "phone": "9435592574",
+    "name": "Lokesh Ji",
+    "phone": "",
+    "amount": "",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 51,
-    "name": "Lokesh Ji",
-    "phone": "",
+    "name": "Harsh Ji Sen",
+    "phone": "9772351916",
+    "amount": "930",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 52,
-    "name": "Harsh Ji Sen",
-    "phone": "9772351916",
+    "name": "Mahesh Ji Soni",
+    "phone": "9057260558",
+    "amount": "1425",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 53,
-    "name": "Mahesh Ji Soni",
-    "phone": "9057260558",
+    "name": "Ramesh Ji Laxkar",
+    "phone": "9782462247",
+    "amount": "450",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 54,
-    "name": "Ramesh Ji Laxkar",
-    "phone": "9782462247",
+    "name": "Om Ji Sen",
+    "phone": "9414786129",
+    "amount": "510",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 55,
-    "name": "Om Ji Sen",
-    "phone": "9414786129",
+    "name": "Meer Ji Hussain",
+    "phone": "9588838235",
+    "amount": "930",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 56,
-    "name": "Meer Ji Hussain",
-    "phone": "9588838235",
+    "name": "Rafeeq Ji Mohamad",
+    "phone": "7742994949",
+    "amount": "240",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 57,
-    "name": "Rafeeq Ji Mohamad",
-    "phone": "7742994949",
+    "name": "Shankar Ji Gurjar",
+    "phone": "9783299571",
+    "amount": "120",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 58,
-    "name": "Shankar Ji Gurjar",
-    "phone": "9783299571",
+    "name": "Laxman Ji Reger",
+    "phone": "8769072635",
+    "amount": "495",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
     "id": 59,
-    "name": "Laxman Ji Reger",
-    "phone": "8769072635",
+    "name": "Rakesh Ji Garg",
+    "phone": "9772432731",
+    "amount": "1200",
+    "paymentStatus": false,
     "product": "Milk"
   },
   {
-    "id" : 60,
-    "name" : "Rakesh Ji Garg",
-    "phone": "9772432731",
+    "id": 60,
+    "name": "Kuldeep Ji Hinoniya",
+    "phone": "8619360900",
+    "amount": "1705",
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
     "id": 61,
-    "name": "Kuldeep Ji Hinoniya",
-    "phone": "8619360900",
-    "product": "Milk"
-  },
-  {
-    "id": 62,
     "name": "Umeed Ji Garg",
     "phone": "9772432731",
+    "amount": "330",
+    "paymentStatus": false,
     "product": "Milk"
   }
 ]

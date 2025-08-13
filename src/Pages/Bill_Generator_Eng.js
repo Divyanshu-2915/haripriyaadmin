@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import consumerData from './Consumer_Bill.json';
+import consumerData from './Consumer_Bill_List.json';
 import QRImage from '../QR.jpg';
 import HeaderImage from '../HeaderImage.png';
 

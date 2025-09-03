@@ -127,7 +127,7 @@
   },
   {
     "id": 22,
-    "name": "Karan Ved",
+    "name": "Karan Ji  Ved",
     "phone": "7014622197",
     "product": "Milk"
   },
@@ -199,7 +199,7 @@
   },
   {
     "id": 34,
-    "name": "Kuldeep Singh DJ",
+    "name": "Kuldeep Singh Ji",
     "phone": "7976629470",
     "product": "Milk"
   },
@@ -265,7 +265,7 @@
   },
   {
     "id": 45,
-    "name": "Om Ji LIC",
+    "name": "Om Singh Ji",
     "phone": "7665381142",
     "product": "Milk"
   },
@@ -370,5 +370,65 @@
     "name": "Umeed Ji Garg",
     "phone": "9772432731",
     "product": "Milk"
-  }
+  },
+    {
+    "id": 63,
+    "name": "Juned Ji Shiekh",
+    "phone": "9610070717",
+    "product": "Milk"
+  },
+    {
+    "id": 64,
+    "name": "Jawan Ji Salvi",
+    "phone": "9460320385",
+    "product": "Milk"
+  },
+    {
+    "id": 65,
+    "name": "Prathvi Singh Ji",
+    "phone": "9414926794",
+    "product": "Milk"
+  },
+    {
+    "id": 66,
+    "name": "Lavina Ji",
+    "phone": "9079861859",
+    "product": "Milk"
+  },
+  {
+  "id": 67,
+    "name": "Sangrampura School",
+    "phone": "9460330947",
+    "product": "Milk"
+  },
+    {
+  "id": 68,
+    "name": "Jagdish Ji",
+    "phone": "7737163784",
+    "product": "Milk"
+  },
+  {
+  "id": 69,
+    "name": "Kalu Ji",
+    "phone": "9079351251",
+    "product": "Milk"
+  },
+  {
+  "id": 70,
+    "name": "Harsh Ji Soni",
+    "phone": "9982591616",
+    "product": "Milk"
+  },
+  {
+  "id": 71,
+    "name": "Shivpriya Ji",
+    "phone": "8789332511",
+    "product": "Milk"
+  },
+    {
+  "id": ,
+    "name": "",
+    "phone": "",
+    "product": "Milk"
+  },
 ]

@@ -57,13 +57,13 @@ function BillGeneratorMerged() {
   };
 
   const copyEnglishMessage = () => {
-    const message = `Hello 🙏,\n${selectedConsumer.name},\nThis is a polite reminder from HariPriya Dairy Farm. Your ${selectedMonth} month milk bill of ₹${amount} is pending.\nKindly pay before 5th of August 2025 to continue uninterrupted service.\nPlease ignore if already paid.\nThank you!\n— Haripriya Dairy Farm`;
+    const message = `Hello 🙏,\n\n${selectedConsumer.name},\n\nThis is a polite reminder from HariPriya Dairy Farm. Your ${selectedMonth} month milk bill of ₹${amount} is pending.\n\nKindly pay before 5th of September 2025 to continue uninterrupted service.\n\nPlease share the ScreenShot after the payment is done.\n\nThank you!\n\n— Haripriya Dairy Farm`;
     navigator.clipboard.writeText(message);
     alert('📋 English bill text copied to clipboard.');
   };
 
   const copyHindiMessage = () => {
-    const message = `नमस्ते 🙏,\n${selectedConsumer.name},\nयह हरिप्रिया डेयरी फार्म की ओर से एक विनम्र अनुरोध है। आपकी ${selectedMonth} माह की दूध बिल ₹${amount} बकाया है। कृपया असुविधा से बचने हेतु 5 अगस्त 2025 से पहले भुगतान करें।\nयदि आपने पहले ही भुगतान कर दिया है, तो कृपया इस संदेश को नज़रअंदाज़ करें।\nआपके सहयोग के लिए धन्यवाद!\n— हरिप्रिया डेयरी फार्म`;
+    const message = `नमस्ते 🙏,\n\n${selectedConsumer.name},\n\nयह हरिप्रिया डेयरी फार्म की ओर से एक विनम्र अनुरोध है। आपकी ${selectedMonth} माह की दूध बिल ₹${amount} बकाया है। कृपया असुविधा से बचने हेतु 5 सितम्बर 2025 से पहले भुगतान करें।\n\nकृपया भुगतान पूरा होने के बाद स्क्रीनशॉट साझा करें।\n\nआपके सहयोग के लिए धन्यवाद!\n\n— हरिप्रिया डेयरी फार्म`;
     navigator.clipboard.writeText(message);
     alert('📋 हिंदी बिल टेक्स्ट क्लिपबोर्ड में कॉपी हो गया!');
   };
@@ -73,7 +73,7 @@ function BillGeneratorMerged() {
       alert('Phone number not available for this consumer.');
       return;
     }
-    const message = `Hello 🙏,\n${selectedConsumer.name},\nThis is a polite reminder from HariPriya Dairy Farm. Your ${selectedMonth} month milk bill of ₹${amount} is pending.\nKindly pay before 5th of August 2025 to continue uninterrupted service.\nPlease ignore if already paid.\nThank you!\n— Haripriya Dairy Farm`;
+    const message = `Hello 🙏,\n\n${selectedConsumer.name},\n\nThis is a polite reminder from HariPriya Dairy Farm. Your ${selectedMonth} month milk bill of ₹${amount} is pending.\n\nKindly pay before 5th of September 2025 to continue uninterrupted service.\n\nPlease share the ScreenShot after the payment is done.\n\nThank you!\n\n— Haripriya Dairy Farm`;
     const whatsappUrl = `https://wa.me/91${selectedConsumer.phone}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -83,7 +83,7 @@ function BillGeneratorMerged() {
       alert('Phone number not available for this consumer.');
       return;
     }
-    const message = `नमस्ते 🙏,\n${selectedConsumer.name},\nयह हरिप्रिया डेयरी फार्म की ओर से एक विनम्र अनुरोध है। आपकी ${selectedMonth} माह की दूध बिल ₹${amount} बकाया है। कृपया असुविधा से बचने हेतु 5 अगस्त 2025 से पहले भुगतान करें।\nयदि आपने पहले ही भुगतान कर दिया है, तो कृपया इस संदेश को नज़रअंदाज़ करें।\nआपके सहयोग के लिए धन्यवाद!\n— हरिप्रिया डेयरी फार्म`;
+    const message = `नमस्ते 🙏,\n\n${selectedConsumer.name},\n\nयह हरिप्रिया डेयरी फार्म की ओर से एक विनम्र अनुरोध है। आपकी ${selectedMonth} माह की दूध बिल ₹${amount} बकाया है। कृपया असुविधा से बचने हेतु 5 सितम्बर 2025 से पहले भुगतान करें।\n\nकृपया भुगतान पूरा होने के बाद स्क्रीनशॉट साझा करें।\n\nआपके सहयोग के लिए धन्यवाद!\n\n— हरिप्रिया डेयरी फार्म`;
     const whatsappUrl = `https://wa.me/91${selectedConsumer.phone}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -151,8 +151,8 @@ function BillGeneratorMerged() {
                   Hello 🙏,<br/>
                   <strong>${selectedConsumer.name}</strong>,<br/>
                   This is a polite reminder from HariPriya Dairy Farm. Your <strong>${selectedMonth}</strong> month milk bill of <strong>₹${amount}</strong> is pending.<br/>
-                  Kindly pay before 5th of August 2025 to continue uninterrupted service.<br/>
-                  Please ignore if already paid.<br/>
+                  Kindly pay before 5th of Septemver 2025 to continue uninterrupted service.<br/>
+                  Please share the ScreenShot after the payment is done.<br/>
                   Thank you!<br/>
                   — Haripriya Dairy Farm
                 </div>
@@ -182,8 +182,8 @@ function BillGeneratorMerged() {
                   नमस्ते 🙏,<br/>
                   <strong>${selectedConsumer.name}</strong>,<br/>
                   यह हरिप्रिया डेयरी फार्म की ओर से एक विनम्र अनुरोध है। आपकी <strong>${selectedMonth}</strong> माह की दूध बिल <strong>₹${amount}</strong> बकाया है।<br/>
-                  कृपया असुविधा से बचने हेतु 5 अगस्त 2025 से पहले भुगतान करें।<br/>
-                  यदि आपने पहले ही भुगतान कर दिया है, तो कृपया इस संदेश को नज़रअंदाज़ करें।<br/>
+                  कृपया असुविधा से बचने हेतु 5 सितम्बर 2025 से पहले भुगतान करें।<br/>
+                  कृपया भुगतान पूरा होने के बाद स्क्रीनशॉट साझा करें।<br/>
                   आपके सहयोग के लिए धन्यवाद!<br/>
                   — हरिप्रिया डेयरी फार्म
                 </div>
@@ -317,8 +317,8 @@ function BillGeneratorMerged() {
                   Hello 🙏,<br/>
                   <strong>${selectedConsumer.name}</strong>,<br/>
                   This is a polite reminder from HariPriya Dairy Farm. Your <strong>${selectedMonth}</strong> month milk bill of <strong>₹${amount}</strong> is pending.<br/>
-                  Kindly pay before 5th of August 2025 to continue uninterrupted service.<br/>
-                  Please ignore if already paid.<br/>
+                  Kindly pay before 5th of September 2025 to continue uninterrupted service.<br/>
+                  Please share the ScreenShot after the payment is done.<br/>
                   Thank you!<br/>
                   — Haripriya Dairy Farm
                 </div>
@@ -348,8 +348,8 @@ function BillGeneratorMerged() {
                   नमस्ते 🙏,<br/>
                   <strong>${selectedConsumer.name}</strong>,<br/>
                   यह हरिप्रिया डेयरी फार्म की ओर से एक विनम्र अनुरोध है। आपकी <strong>${selectedMonth}</strong> माह की दूध बिल <strong>₹${amount}</strong> बकाया है।<br/>
-                  कृपया असुविधा से बचने हेतु 5 अगस्त 2025 से पहले भुगतान करें।<br/>
-                  यदि आपने पहले ही भुगतान कर दिया है, तो कृपया इस संदेश को नज़रअंदाज़ करें।<br/>
+                  कृपया असुविधा से बचने हेतु 5 सितम्बर 2025 से पहले भुगतान करें।<br/>
+                  कृपया भुगतान पूरा होने के बाद स्क्रीनशॉट साझा करें।<br/>
                   आपके सहयोग के लिए धन्यवाद!<br/>
                   — हरिप्रिया डेयरी फार्म
                 </div>
@@ -548,8 +548,8 @@ function BillGeneratorMerged() {
                   Hello 🙏,<br/>
                   <strong>{selectedConsumer.name}</strong>,<br/>
                   This is a polite reminder from HariPriya Dairy Farm. Your <strong>{selectedMonth}</strong> month milk bill of <strong>₹{amount}</strong> is pending.<br/>
-                  Kindly pay before 5th of August 2025 to continue uninterrupted service.<br/>
-                  Please ignore if already paid.<br/>
+                  Kindly pay before 5th of September 2025 to continue uninterrupted service.<br/>
+                  Please share the ScreenShot after the payment is done.<br/>
                   Thank you!<br/>
                   — Haripriya Dairy Farm
                 </p>
@@ -607,8 +607,8 @@ function BillGeneratorMerged() {
                   नमस्ते 🙏,<br/>
                   <strong>{selectedConsumer.name}</strong>,<br/>
                   यह हरिप्रिया डेयरी फार्म की ओर से एक विनम्र अनुरोध है। आपकी <strong>{selectedMonth}</strong> माह की दूध बिल <strong>₹{amount}</strong> बकाया है।<br/>
-                  कृपया असुविधा से बचने हेतु 5 अगस्त 2025 से पहले भुगतान करें।<br/>
-                  यदि आपने पहले ही भुगतान कर दिया है, तो कृपया इस संदेश को नज़रअंदाज़ करें।<br/>
+                  कृपया असुविधा से बचने हेतु 5 सितम्बर 2025 से पहले भुगतान करें।<br/>
+                  कृपया भुगतान पूरा होने के बाद स्क्रीनशॉट साझा करें।<br/>
                   आपके सहयोग के लिए धन्यवाद!<br/>
                   — हरिप्रिया डेयरी फार्म
                 </p>

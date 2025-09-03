@@ -84,7 +84,7 @@
     "name": "Abhilekh Ji Sharma",
     "phone": "7976170569",
     "amount": "880",
-    "paymentStatus": false,
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
@@ -132,7 +132,7 @@
     "name": "Kuldeep Ji Hinoniya",
     "phone": "8619360900",
     "amount": "660",
-    "paymentStatus": false,
+    "paymentStatus": true,
     "product": "Milk"
   },
   {
